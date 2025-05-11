@@ -25,8 +25,8 @@ const getTaskItems = async (userId: number): Promise<TaskItem[]> => {
   console.log("func_url:", func_url); // Log the URL for debugging
   const url = appendParameterToUrl(func_url, "userId", userId.toString());
 
-  console.log("url:", url); // Log the URL for debugging
-  console.log("userId:", userId); // Log the userId for debugging
+  console.log("url:", url); 
+  console.log("userId:", userId); 
 
   const response = await fetch(url, {
     method: "GET",
