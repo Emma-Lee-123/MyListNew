@@ -45,7 +45,7 @@ const getTaskItems = async (userId: number): Promise<TaskItem[]> => {
 
 const setTaskCompleted = async (taskItem: TaskItem): Promise<boolean> => {
   const func_url_base: string = import.meta.env.VITE_WEBAPP_FUNC_SETTASKCOMPLETE_URL;
-  console.log("func_url_base:", func_url_base); // Log the URL for debugging
+  console.log("func_url_base:", func_url_base); 
   const response = await fetch(func_url_base, {
     method: "PUT",
     headers: {
@@ -65,7 +65,7 @@ const setTaskCompleted = async (taskItem: TaskItem): Promise<boolean> => {
 
 const deleteTaskItem = async (id: number): Promise<boolean> => {
   const func_url_base: string = import.meta.env.VITE_WEBAPP_FUNC_DELETETASK_URL;
-  console.log("func_url_base:", func_url_base); // Log the URL for debugging
+  console.log("func_url_base:", func_url_base); 
   const func_url = appendParameterToUrl(func_url_base, "taskId", id.toString());
   console.log("func_url:", func_url); // Log the URL for debugging
 

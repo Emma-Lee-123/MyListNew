@@ -56,7 +56,7 @@ const getAuthenticatedUser = async (
     return undefined;
   }
   const func_url_base: string = import.meta.env.VITE_WEBAPP_FUNC_ISAUTHENTICATED_URL;
-  console.log("func_url_base:", func_url_base); // Log the URL for debugging
+  console.log("func_url_base:", func_url_base); 
   try {
     const response = await fetch(func_url_base, {
       method: "POST",
