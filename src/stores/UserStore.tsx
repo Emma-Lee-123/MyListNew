@@ -40,7 +40,7 @@ const userNameOrEmailExists = async (
     return result;
   } catch (error) {
     console.error("Error:", error);
-    throw error; // Rethrow the error to be handled by the caller
+    throw error; 
   }
 };
 
