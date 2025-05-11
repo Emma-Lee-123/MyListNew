@@ -52,4 +52,4 @@ export default tseslint.config({
   },
 })
 ```
-url: https://jolly-desert-02209c610.6.azurestaticapps.net/
+url: https://brave-rock-0ef1eba10.6.azurestaticapps.net/
