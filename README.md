@@ -1,55 +1,35 @@
-# React + TypeScript + Vite
+### URL: https://brave-rock-0ef1eba10.6.azurestaticapps.net/
+## My List - Frontend UI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**MyList** is a full-stack cloud-based to-do list application that lets users securely manage their personal tasks from any device anywhere. With user authentication, persistent task storage, and a responsive UI, MyList provides a clean and user-friendly interface for creating and organizing your day-to-day activities.
 
-Currently, two official plugins are available:
+This repository contains the frontend for the My List application, built with **React (TypeScript)** and styled using **Bootstrap** and **React-Bootstrap**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Tech Stack
 
-## Expanding the ESLint configuration
+- **Platform:** Azure Static Apps  
+- **Language:** React(with Typescript)
+- **Styling:** Bootstrap, React-Bootstrap  
+- **Database:** Azure SQL  
+- **Deployment:** GitHub Actions to Azure Static Apps  
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Features
+- **User Authentication:** Secure sign-in and sign-out, each user has access only to their own tasks  
+- **Tasks Management:** Create new task, view new/completed tasks, mark tasks as completed, and delete tasks  
+- **Cloud Hosted:** Fully deployed in Azure, including frontend, backend ,and database.  Scalable, performant, and always available 
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### Configuration
+Environment variables: uses "VITE_" prefixed environment variables to config Azure functions endpoints
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### License
+This project is open-source and available under the GNU General Public License (GPLv3)
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### To Do/Inprovements
+- OAuth-based authentication
+- Email verification and notification
+- Forgot and reset password feature
+- Mobile UI improvements (React Native)
+- Task due dates and reminder
+- Categorization and filters
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
-url: https://brave-rock-0ef1eba10.6.azurestaticapps.net/
+  
