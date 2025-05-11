@@ -55,8 +55,7 @@ const getAuthenticatedUser = async (
     console.log("User email or password is empty");
     return undefined;
   }
-  const func_url_base: string = import.meta.env
-    .VITE_WEBAPP_FUNC_ISAUTHENTICATED_URL;
+  const func_url_base: string = import.meta.env.VITE_WEBAPP_FUNC_ISAUTHENTICATED_URL;
   console.log("func_url_base:", func_url_base); // Log the URL for debugging
   try {
     const response = await fetch(func_url_base, {

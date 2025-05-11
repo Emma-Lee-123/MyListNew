@@ -44,8 +44,7 @@ const getTaskItems = async (userId: number): Promise<TaskItem[]> => {
 };
 
 const setTaskCompleted = async (taskItem: TaskItem): Promise<boolean> => {
-  const func_url_base: string = import.meta.env
-    .VITE_WEBAPP_FUNC_SETTASKCOMPLETE_URL;
+  const func_url_base: string = import.meta.env.VITE_WEBAPP_FUNC_SETTASKCOMPLETE_URL;
   console.log("func_url_base:", func_url_base); // Log the URL for debugging
   const response = await fetch(func_url_base, {
     method: "PUT",
