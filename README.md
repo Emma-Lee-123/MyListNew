@@ -1,3 +1,8 @@
+![React](https://img.shields.io/badge/Frontend-React-blue)
+![TypeScript](https://img.shields.io/badge/Language-TypeScript-lightblue)
+![Bootstrap](https://img.shields.io/badge/UI-Bootstrap-purple)
+![Azure Static Web Apps](https://img.shields.io/badge/Hosting-Azure_Static_Web_Apps-0078D4)
+
 ### URL: https://brave-rock-0ef1eba10.6.azurestaticapps.net/
 ## My List - Frontend UI
 
