@@ -29,7 +29,7 @@ Environment variables: uses "VITE_" prefixed environment variables to config Azu
 ### License
 This project is open-source and available under the GNU General Public License (GPLv3)
 
-### To Do/Inprovements
+### Future Inprovements
 - OAuth-based authentication
 - Email verification and notification
 - Forgot and reset password feature
